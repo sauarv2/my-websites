@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style-type: none;
+}
+:root {
+  --primary_color: #f368e0;
+  --white-color: #fff;
+  --gery-background: rgba(0, 0, 0, 0.3);
+  --semi-white_color: #eee;
+  --black-color: #000;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/************* header statrt*********************/
+header {
+  /* border: 1px solid #008000; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header nav {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+  position: relative;
+}
+header nav ul {
+  /* border: 1px solid red; */
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 0.8rem;
+  font-size: 1.15rem;
+  transition: all 0.2s linear;
+}
+header nav ul li:hover {
+  color: var(--primary_color);
+}
+header nav .logo h3,
+span {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+header nav .logo span {
+  color: var(--primary_color);
+}
+header nav a {
+  padding: 0.5rem 1.2rem;
+  background: var(--primary_color);
+  border: none;
+  font-size: 1.1rem;
+  color: var(--white-color);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: border 0.6s linear;
+  transition: border 0.6s linear;
+  transition: all 0.2s linear;
+  border: 1px solid var(--white-color);
+}
+header nav a:hover {
+  border: 1px solid var(--primary_color);
+  color: var(--primary_color);
+  background: transparent;
+}
+header nav button:focus {
+  outline: none;
+}
+header nav ion-icon {
+  display: none;
+}
+
+/******************** header ends*********************/
+
+/***********************home section start***************/
+.home {
+  padding: 0%;
+}
+.home .homeSlider .slider {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.home .homeSlider .slider .content {
+  /* border: 1px solid #008000; */
+  text-align: center;
+  max-width: 70rem;
+  min-height: 12rem;
+}
+.home .homeSlider .slider .content h3 {
+  font-size: 3rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  transition-delay: 0.2s;
+}
+.home .homeSlider .slider .content p {
+  font-size: 1.2rem;
+  color: var(--semi-white_color);
+  padding: 1rem 0;
+  width: 60rem;
+  transition-delay: 0.2s;
+}
+.home .homeSlider .slider .content .button {
+  /* border: 1px solid red; */
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  flex: 1;
+  margin-top: 1rem;
+}
+.home .homeSlider .slider .content .button .btn {
+  background: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  margin: 0 10px;
+  transition: 0.42s linear;
+  transition-delay: 0.2s;
+}
+.home .homeSlider .slider .content .button .btn:hover {
+  background: var(--primary_color);
+  color: var(--white-color);
+}
+.home .homeSlider .slider .content .button .btn-1 {
+  background: var(--primary_color);
+  color: var(--white-color);
+}
+.home .homeSlider .slider .content .button .btn-1:hover {
+  letter-spacing: 0.2;
+  background: var(--white-color);
+  color: var(--primary_color);
+}
+.home .homeSlider .slider .content .button .btn:hover {
+}
+
+.home .homeSlider .slider .content .button a {
+  color: var(--primary_color);
+  font-size: 1.2rem;
+}
+
+/***********************home section end***************/
+
+/************************* media quries ******************/
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%;
+  }
+  header nav {
+    padding: 2rem;
+  }
+}
+
+/************************* media 720px quries ******************/
+@media (max-width: 720px) {
+  header nav ion-icon {
+    display: block;
+  }
+  header nav ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--gery-background);
+    border-top: 0.2rem solid #eee;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header nav ul li {
+    display: block;
+    margin: 0.6rem 0;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background: #eee;
+  }
+  header nav .menuBtn {
+    display: flex;
+    align-items: center;
+    flex: 0.3;
+    justify-content: space-between;
+  }
+  header nav .menuBtn ion-icon {
+    color: #000;
+    font-size: 2rem;
+    transition: all 0.2s ease;
+  }
+  .menuBtn ion-icon:hover {
+    transform: rotate(180deg);
+    color: var(--primary_color);
+  }
+}
+
+/************************* media 450px quries ******************/
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  header nav .menuBtn {
+    flex: 0.5;
+  }
+}

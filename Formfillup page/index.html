@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+   <div class="container">
+       <form  onsubmit="myfun(); reset(); return false;">
+           <h3>GET IN TOUCH</h3>
+           <input type="text" id="name" placeholder="Your Name" required/>
+           <input type="email" id="email" placeholder="Email" required/>
+           <input type="text" id="number" placeholder="Ph no." required/>
+           <textarea type="text" id="comment" rows="4" placeholder="Write your Requirment"></textarea>
+           <button type="submit">Send</button>
+       </form>
+   </div>
+        
+       
+        <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.container{
+    background-image: url("background(2).png");
+    height:100vh;
+    width:100%;
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+li,a,i {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color:#F5EFFA;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 10px;
+    position: relative;
+
+}
+.logo{
+   width: 200px;
+   top:5%;
+   position: absolute;
+   cursor: pointer;
+
+}
+.nav-bar{
+    list-style-type:none;
+    left: 25%;
+    position:relative;
+    top:5%;
+    left:60%;
+}
+
+.nav-bar li {
+    display: inline-block;
+    padding: 5px 10px;
+    /* position: absolute; */
+    
+}
+.nav-bar a {
+  color:#fff;
+  font-size: 22px;
+  transition: all 0.3s ease-in;
+}
+.nav-bar a:hover {
+  color:#0c0b0b;
+  text-decoration: underline;
+}
+
+
+.cart {
+  float: right;
+  position: absolute;
+  left:1250px;
+  top:5%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.fa-shopping-bag{
+    font-size: 50px;
+    color:#232d60;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+
+
+}.fa-shopping-bag:hover{
+   
+    color:#ffffff;
+    
+
+}
+.main_container{
+  top:35%;
+  position:absolute;
+  font-family:'Times New Roman', Times, serif;
+  left: 5%;
+}
+
+.btn a{
+    font-size: 40px;
+    color:#E4FFA7;
+    transition: 0.3s ease-out;
+}
+.btn a:hover{
+    color:#232d60;
+}
+.btn{
+    background: linear-gradient(#3bffef, #b9d164) ;
+    padding:5px 10px;
+    color:#fff;
+    border-radius: 20px;
+    border:none;
+    margin-bottom: 10px;
+    display:inline-block;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+
+.heading{
+    font-size: 30px;
+    color:#232d60;
+    font-weight: 100;
+    left:10%;
+    position:relative;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.line{
+    font-size: 20px;
+    color:#26272c;
+    left:10%;
+    position:relative;
+    word-spacing: 1.5px;
+}
+.img{
+    height: 95%;
+    top:6%;
+    position:absolute;
+    left:45%;
+    bottom:0 ;
+    z-index: 0;
+}

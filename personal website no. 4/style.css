@@ -1,0 +1,774 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.navBar {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  /* padding: 5px 0; */
+  /* background: crimson; */
+}
+.navContent {
+  /* border: 1px solid #fff; */
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin: auto;
+  align-items: center;
+}
+.navBar .navContent .logo a {
+  /* border: 1px solid black; */
+  letter-spacing: 3px;
+  font-size: 60px;
+  color: crimson;
+  font-weight: 600;
+  margin-left: 70px;
+  /* padding: 10px 0 10px 0; */
+}
+.navBar .navContent .logo a span {
+  color: #fff;
+}
+.navBar .navContent ul {
+  /* border: 1px solid blue; */
+  list-style-type: none;
+  /* display: flex; */
+  display: flex;
+  padding: 10px 0 10px 0;
+  line-height: 80px;
+  margin-right: 40px;
+}
+
+.navBar .navContent ul li a {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: color 0.3s linear;
+  /* border: 1px solid black; */
+}
+
+.navBar .navContent ul li a:hover {
+  color: rgb(220, 20, 60);
+}
+.menu-btn {
+  /* border: 1px solid red; */
+  color: #fff;
+  padding: 10px;
+  font-size: 2.5rem;
+  display: none;
+  /* margin-left: 120px; */
+}
+.home {
+  background: url("perason background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home .homeContent {
+  /* border: 1px solid red; */
+  margin-left: 80px;
+}
+.home .homeContent .homeDis {
+  padding: 20px;
+}
+.home .homeContent .homeDis .text-1 {
+  font-size: 1.5rem;
+}
+.home .homeContent .homeDis .text-2 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+.home .homeContent .homeDis .text-2 span {
+  color: rgb(220, 20, 60);
+}
+.home .homeContent .homeDis .text-3 {
+  font-size: 2rem;
+}
+.home .homeContent .homeDis .text-3 span {
+  color: rgb(220, 20, 60);
+  font-weight: 600;
+}
+.home .homeContent .homeDis a {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(220, 20, 60, 0.612);
+  font-size: 30px;
+  padding: 10px 20px;
+  border: 3px solid rgb(220, 20, 60, 0);
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.home .homeContent .homeDis a:hover {
+  background: none;
+  color: rgba(220, 20, 60);
+  border: 3px solid rgb(220, 20, 60);
+}
+/* ****************about section ******************** */
+.about {
+  padding: 100px;
+  /* border: 1px solid green; */
+  background: rgba(255, 241, 246);
+}
+.aboutContent {
+  /* border: 1px solid red; */
+  /* max-width: 800px; */
+  /* border: 1px solid green; */
+}
+section .title {
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 600;
+  color: #000;
+  z-index: 999;
+  /* border: 1px solid red; */
+  /* display: inline-block; */
+}
+section .title span {
+  color: rgb(220, 20, 60);
+}
+.about .aboutContent .aboutDis .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.about .aboutContent .aboutDis .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .title::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 3px;
+  background: rgb(220, 20, 60);
+  align-items: center;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+section .title::after {
+  content: "who I am";
+  position: absolute;
+  padding: 5px;
+  left: 50%;
+  color: #000;
+  background-color: #fff;
+  bottom: -35px;
+  font-size: 20px;
+  text-align: center;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.about .title::after {
+  content: "who I am";
+  background-color: rgba(255, 241, 246);
+}
+
+.about .aboutContent .aboutDis {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about .aboutContent .aboutDis .left {
+  width: 45%;
+  /* border: 1px solid rebeccapurple; */
+}
+
+.about .aboutContent .aboutDis .right {
+  /* border: 1px solid green; */
+  width: 55%;
+  padding: 40px;
+  /* border: 1px solid red; */
+}
+
+.about .aboutContent .aboutDis .right .text1 span {
+  color: rgb(220, 20, 60);
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.about .aboutContent .aboutDis .right .text1 {
+  margin-bottom: 10px;
+}
+.about .aboutContent .aboutDis .right p {
+  font-size: 17px;
+}
+.about .aboutContent .aboutDis a {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(220, 20, 60);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid rgb(220, 20, 60, 0);
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.about .aboutContent .aboutDis a:hover {
+  background: none;
+  color: rgba(220, 20, 60);
+  border: 3px solid rgb(220, 20, 60);
+}
+
+/******************* SERVICES**************************/
+.service .title::after {
+  content: "what I provide";
+}
+.service {
+  background-color: rgb(250, 198, 206);
+  color: #111;
+  padding: 70px;
+}
+
+.service .title::after {
+  background-color: rgb(250, 198, 206);
+}
+.service .serviceContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .serviceContent .serviceDis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  width: 89%;
+}
+
+.service .serviceContent .serviceDis .card {
+  width: 30%;
+  height: 220px;
+  padding: 15px 40px;
+  background: rgb(220, 20, 60);
+  color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* .service .serviceContent .serviceDis .card .textT p {
+  margin-bottom: 20px;
+} */
+
+.service .serviceContent .serviceDis .card:hover {
+  transform: scale(1.09);
+  background: #fff;
+  color: rgb(220, 20, 60);
+}
+.service .serviceContent .serviceDis .card i {
+  color: #111;
+  font-size: 50px;
+}
+
+.service .serviceContent .serviceDis .card h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
+}
+/**************************** Skill Content**********************/
+.skills .title::after {
+  content: "what I know";
+}
+.skills {
+  padding: 50px;
+}
+/* .skillsContent {
+  padding: 50px;
+} */
+.skills .skillsContent .skillsDis {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%;
+}
+.skills .skillsContent .skillsDis .divLeft {
+  width: 45%;
+  /* border: 1px solid green; */
+  padding: 80px;
+}
+.skills .skillsContent .skillsDis .divLeft h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.skills .skillsContent .skillsDis .divLeft a {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(220, 20, 60);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid rgb(220, 20, 60, 0);
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.skills .skillsContent .skillsDis .divLeft a:hover {
+  background: none;
+  color: rgba(220, 20, 60);
+  border: 3px solid rgb(220, 20, 60);
+}
+
+.skills .skillsContent .skillsDis .divRight {
+  width: 55%;
+  padding: 15px 5px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.skills .skillsContent .skillsDis .divRight .right-content {
+  /* border: 1px solid greenyellow; */
+  width: 98%;
+}
+
+.skills .skillsContent .skillsDis .divRight .bars {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  align-items: center;
+}
+.skills .skillsContent .skillsDis .divRight .bars span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.skills .skillsContent .skillsDis .divRight .line {
+  height: 4px;
+  width: 100%;
+  background: rgb(128, 128, 128);
+  position: relative;
+  margin-bottom: 15px;
+}
+.skills .skillsContent .skillsDis .divRight .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: rgb(220, 20, 60);
+}
+.skills .skillsContent .skillsDis .divRight .html::before {
+  width: 90%;
+}
+.skills .skillsContent .skillsDis .divRight .css::before {
+  width: 80%;
+}
+.skills .skillsContent .skillsDis .divRight .js::before {
+  width: 60%;
+}
+.skills .skillsContent .skillsDis .divRight .php::before {
+  width: 50%;
+}
+.skills .skillsContent .skillsDis .divRight .sq::before {
+  width: 30%;
+}
+/********************************* Team Section****************************/
+.team .title {
+  color: #fff;
+}
+.team .title::after {
+  content: "Who with Me";
+  background: #222;
+  color: rgb(220, 20, 60);
+}
+.team {
+  background: #222;
+  padding: 50px;
+}
+.team .teamContent .teamDis .cardDis {
+  display: flex;
+  /* border: 1px solid green; */
+  width: 100%;
+}
+.team .teamContent .teamDis .cardDis .card {
+  background-color: #333;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.team .teamContent .teamDis .cardDis .card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgb(220, 20, 60);
+  transition: border 0.5s ease-in;
+}
+.team .teamContent .teamDis .cardDis .card p {
+  /* transform: translateX(15%); */
+  width: 73%;
+  text-align: center;
+}
+.team .teamContent .teamDis .cardDis .card:hover {
+  background: rgb(220, 20, 60);
+  transform: scale(1.05);
+}
+
+.team .teamContent .teamDis .cardDis .card h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.team .teamContent .teamDis .cardDis .card:hover img {
+  border: 5px solid #fff;
+}
+
+/****************************** Contect Section************************/
+
+.contact .title::after {
+  content: "get in Touch";
+}
+.contact {
+  padding: 70px;
+}
+.contact .conContent .conDis {
+  /* border: 1px solid green; */
+  display: flex;
+}
+.contact .conContent .conDis .conLeft {
+  width: 45%;
+  /* border: 1px solid red; */
+}
+.contact .conContent .conDis .conLeft h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(220, 20, 60);
+  margin-bottom: 10px;
+}
+.contact .conContent .conDis .conLeft p {
+  font-size: 18px;
+}
+.contact .conContent .conDis .conLeft span {
+  font-weight: 800;
+  font-size: 18.5px;
+}
+.contact .conContent .conDis .conLeft address h3 i {
+  font-size: 21px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+.contact .conContent .conDis .conRight {
+  width: 55%;
+  padding: 50px;
+}
+.contact .conContent .conDis .conRight form .fields {
+  display: flex;
+}
+
+.contact .conContent .conDis .conRight form .fields {
+  display: flex;
+}
+.contact .conRight form .field,
+.contact .conRight form .fields .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .conRight form .Name {
+  margin-right: 10px;
+}
+.contact .conRight form .Email {
+  margin-left: 10px;
+}
+.contact .conRight form .fieldArea {
+  height: 80px;
+}
+.contact .conRight form .field input,
+.contact .conRight form .fieldArea textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.contact .conRight form .fieldArea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .conRight form .button button {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(220, 20, 60);
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid rgb(220, 20, 60, 0);
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.contact .conRight form .button button:hover {
+  background: none;
+  color: rgba(220, 20, 60);
+  border: 3px solid rgb(220, 20, 60);
+}
+.contact .conRight form .text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/*............. Footer Styling......................... */
+footer {
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 20px 25px;
+  font-size: 17px;
+}
+footer span a {
+  color: rgb(220, 20, 60);
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* ..............media content............... */
+
+@media (max-width: 990px) {
+  .navContent {
+    padding: 0 50px;
+  }
+  .navBar .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: -1000px;
+    top: 0;
+    background: rgb(220, 20, 60);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px 80px;
+    border: 1px solid beige;
+  }
+
+  .navBar .navContent ul li a {
+    align-items: center;
+    font-size: 30px;
+  }
+
+  .navBar .navContent ul li a:hover {
+    color: #000;
+  }
+  .menu-btn {
+    /* border: 1px solid red; */
+    z-index: 10;
+    display: inline-block;
+    line-height: 50px;
+    z-index: 1000;
+  }
+
+  .home .homeContent .homeDis .text-2 {
+    font-size: 4rem;
+  }
+
+  .home .homeContent .homeDis .text-3 {
+    font-size: 1.5rem;
+  }
+  .home .homeContent {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navContent {
+    padding: 0;
+  }
+  .home .homeContent .homeDis .text-2 {
+    font-size: 4.2rem;
+  }
+
+  .home .homeContent .homeDis .text-3 {
+    font-size: 1.6rem;
+  }
+  .home .homeContent {
+    margin-left: -5px;
+  }
+  .navBar .navContent .logo a {
+    margin-left: -5px;
+  }
+  .menu-btn {
+    /* border: 1px solid red; */
+    margin-right: 40px;
+  }
+  .home .homeContent .homeDis .text-1 {
+    font-size: 1.8rem;
+  }
+  .about {
+    padding: 50px;
+  }
+  .aboutContent {
+    width: 100%;
+    /* width: 1200px; */
+  }
+
+  .about .aboutContent .aboutDis .col {
+    width: 100%;
+  }
+  .about .aboutContent .aboutDis {
+    flex-direction: column;
+    width: 95%;
+  }
+
+  .about .aboutContent .aboutDis .right {
+    /* width: 100%; */
+    flex: 100%;
+  }
+  .service .serviceContent .serviceDis {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .service .serviceContent .serviceDis .card {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .service {
+    padding: 20px;
+  }
+  .skills {
+    padding: 20px;
+  }
+  .skills .skillsContent .skillsDis .divLeft h3 {
+    font-size: 20px;
+  }
+  .skills .skillsContent .skillsDis .divLeft {
+    /* border: 1px solid green; */
+    padding: 5px;
+  }
+  .skills .skillsContent .skillsDis {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .skills .skillsContent .skillsDis .divLeft {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .skills .skillsContent .skillsDis .divRight {
+    width: 90%;
+  }
+  .team .teamContent .teamDis .cardDis {
+    flex-direction: column;
+  }
+  .team .teamContent .teamDis .cardDis .card {
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  .contact .conContent .conDis {
+    flex-direction: column;
+  }
+  .contact .conContent .conDis .conLeft {
+    width: 100%;
+  }
+  .contact {
+    padding: 30px;
+  }
+  .contact .conContent .conDis .conRight {
+    width: 100%;
+    padding: 5px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navBar .navContent .logo a {
+    font-size: 40px;
+  }
+  .menu-btn {
+    margin-right: 10px;
+  }
+  .home .homeContent .homeDis .text-2 {
+    font-size: 3.4rem;
+    margin-top: -5px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+
+  .home .homeContent .homeDis .text-3 {
+    font-size: 1.5rem;
+  }
+  .home .homeContent .homeDis .text-1 {
+    font-size: 1.7rem;
+  }
+  .home .homeContent {
+    margin-left: -10px;
+  }
+  .navBar .navContent .logo a {
+    margin-left: 4px;
+  }
+  .menu-btn {
+    /* border: 1px solid red; */
+    font-size: 30px;
+  }
+  .home .homeContent .homeDis a {
+    margin-top: 35px;
+  }
+  .about {
+    padding: 10px;
+  }
+  .about .aboutContent .aboutDis .left img {
+    height: 300px;
+    width: 300px;
+  }
+  .about .aboutContent .aboutDis .right {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .about .aboutContent .aboutDis .right .text1 span {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  footer {
+    font-size: 12px;
+  }
+}

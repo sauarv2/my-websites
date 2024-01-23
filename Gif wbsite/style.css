@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  background-image: url("VAQa.gif");
+  background-size: 40%;
+  background-color: #000;
+  /* width: 40%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* z-index: 1; */
+  min-height: 100vh;
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto Mono", monospace;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #fff; */
+  margin: 1rem 2rem;
+  align-items: center;
+  /* padding: 1rem; */
+}
+nav img {
+  width: 20rem;
+  /* font-size: 2rem; */
+  /* margin-left: 3rem; */
+  /* border: 1px solid #fff; */
+}
+
+nav ul {
+  margin-right: 2rem;
+}
+nav ul li {
+  display: inline-block;
+  margin: 1.7rem;
+  font-size: 1.4rem;
+}
+.container {
+  /* border: 1px solid #fff; */
+  margin-top: 10rem;
+  width: 40%;
+  padding: 2rem;
+}
+.container h2 {
+  font-size: 4.7rem;
+  margin-bottom: 3rem;
+}
+.container a {
+  background: rgb(111, 111, 110);
+  padding: 1.3rem;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.dot {
+  margin-left: 2rem;
+  margin-top: 5rem;
+}
+.dot span {
+  background-color: rgb(167, 167, 50);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+
+  margin-left: 1rem;
+  /* position: absolute; */
+}
+.dot span.to {
+  background: #fff;
+}
+.dis {
+  position: absolute;
+  right: 5%;
+  /* border: 1px solid #fff; */
+  min-width: 32%;
+  padding: 1rem;
+  overflow: hidden;
+}
+.dis h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.dis a {
+  background: rgb(111, 111, 110);
+  padding: 1rem;
+  color: #fff;
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Nevigation Bar"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Nevigation Bar"
+	}
+}

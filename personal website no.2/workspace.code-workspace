@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\personal website no.1\\website(1)\\Easy Tutorial(youtube)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "personal website no.2"
+	}
+}

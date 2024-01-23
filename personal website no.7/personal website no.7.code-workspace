@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../Glocery website"
+	},
+	{
+		"path": "../../Javascript website/form wave animatiom"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "personal website no.7"
+  }
+}
