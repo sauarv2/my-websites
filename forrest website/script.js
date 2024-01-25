@@ -19,16 +19,16 @@ slides[slideNumber].classList.add('active');
 
 }
 // slide next button********************
-prevBtn.onclick = () =>{
-    slides.forEach((slide)=>{
-slide.classList.remove('active')
-    });
+// prevBtn.onclick = () =>{
+//     slides.forEach((slide)=>{
+// slide.classList.remove('active')
+//     });
 
-slideNumber--;
+// slideNumber--;
 
-if(slideNumber < 0  ){
-    slideNumber = numberofSlides -1 ;
-}
-slides[slideNumber].classList.add('active');
+// if(slideNumber < 0  ){
+//     slideNumber = numberofSlides -1 ;
+// }
+// slides[slideNumber].classList.add('active');
 
-}
+// }
